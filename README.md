@@ -3,7 +3,7 @@ Group Name: STeam
 
 [MVP Link](https://docs.google.com/document/d/1fKt3dIWbXDXDxxa2TfQEufvZZMTLYHkJN-kwmsx7REc/edit?usp=sharing)
 
-Team Members: aharia2, zehaoji2, diegoat2
+Team Members: aharia2, zehaoji2, diegoat2, aamande2
 
 Project Manager: gychen2
 
