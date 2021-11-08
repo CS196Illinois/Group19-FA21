@@ -16,6 +16,9 @@ export default function App() {
     return (
         <div style={{ position: 'absolute', left: '50%', top: '50%',
         transform: 'translate(-50%, -50%)'}}>
+          <h1>
+            Choose Style
+          </h1>
           <button onClick = {clickMe}>
             Fancy
           </button>
