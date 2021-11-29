@@ -14,32 +14,30 @@ public class Restaurant {
     
     private String name;
     private String cuisine;
+    private String id;
+    private String url;
+    private double lat;
+    private double lng;
+
+    // getter
     public String getName() {
         return name;
     }
     public String getCuisine() {
         return cuisine;
     }
-
-    // load csv file into a list (haven't finished)
-
-    // public static String loadRestaurants() {
-    //     String input =
-    //         new Scanner(Server.class.getResourceAsStream("/restaurants.csv"), "UTF-8")
-    //             .useDelimiter("\\A")
-    //             .next();
-    //     CSVReader csvReader = new CSVReaderBuilder(new StringReader(input)).withSkipLines(1).build();
-    //     ArrayNode restaurants = JsonNodeFactory.instance.arrayNode();
-    //     for (String[] parts : csvReader) {
-    //       ObjectNode restaurant = JsonNodeFactory.instance.objectNode();
-    //       restaurant.put("id", parts[0]);
-    //       restaurant.put("name", parts[1]);
-    //       restaurant.put("cuisine", parts[2]);
-    //       restaurant.put("url", parts[3]);
-    //       restaurants.add(restaurant);
-    //     }
-    //     return restaurants.toPrettyString();
-    //   }
+    public String getId() {
+      return id;
+    }
+    public String getUrl() {
+      return url;
+    }
+    public double getLat() {
+      return lat;
+    }
+    public double getLng() {
+      return lng;
+    }
 
 
     // search restaurants by keyword (matching name and cuisine)
@@ -73,5 +71,12 @@ public class Restaurant {
           }
         }
         return toReturn;
-      }
-}
+    }
+
+    public Restaurant(String setId, String setName, String setCuisine, String setUrl) {
+      id = setId;
+      name = setName;
+      cuisine = setCuisine;
+      url = setUrl;
+    }
+}  
