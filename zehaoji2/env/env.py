@@ -1,9 +1,11 @@
-import time 
 from flask import Flask
+from flask_cors import CORS
 
 app = Flask(__name__)
+cors = CORS(app)
 
-@app.route('/time')
+@app.route('/fibonacci')
 
-def get_current_time():
-    return {'time': time.time()}
+
+def fibonacci_of():
+    return 1
