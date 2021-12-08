@@ -1,12 +1,11 @@
 import React from "react";
-// import { Route, Routes } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
-// const history = useHistory();
+const ExampleComponent = () => {
+  const history = useNavigate();
+  const handleClick = () => history.push('/App2Cheap')
 
-//   const routeChange = () =>{ 
-//     let path = `\App2.js`; 
-//     gonk.history.push(path);
-//   }
+}
 
 
 function clickMe() {
@@ -19,13 +18,14 @@ export default function App() {
           <h1>
             Choose Style
           </h1>
-          <button onClick = {clickMe}>
+          <button onClick = {ExampleComponent}>
             Fancy
           </button>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <button onClick = {clickMe}>
+          <button onClick = {clickMe()}>
             Cheap
           </button>
         </div>
+  
     )
 }
