@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Random UIUC Facts</title>
+    <meta
+      name="description"
+      content="Get a random fact about UIUC."
+    />
+    <meta name="author" content="Juan David Campolargo." />
+    <style>
+      body {
+        margin: 15px auto;
+        max-width: 650px;
+        line-height: 1.2;
+        font-family: sans-serif;
+        font-size: 2em;
+        color: #fff;
+        background: rgb(12, 38, 187);
+      }
+    </style>
+  </head>
+  <body onload="main()">
+    <h1>Random UIUC Facts</h1>
+    <p id="output_p"></p>
+    <script>
+      function main() {
+        const facts = [
+          'The founders of YouTube, Steven Chen and Jawed Karim, are both Illinois alumnus.',
+          'The Altgeld Bell Tower is missing D# and F because it was not in the original fight song.',
+          'The squirrels were not native but were introduced',
+          'Mumford House (on the south quad) is the oldest standing structure on campus.',
+          'It is rumored that the foreign language building was designed so that if it was bombed, the buildings shell would fall outwards, protecting the supercomputer PLATO on the inside. It is also rumored that the buildings interior layout was a result of trying to confuse Soviet spies and prevent them from stealing secrets from the supercomputer.',
+          'Hugh Hefner actually offered to donate the money for a new U of I building, but he was turned down because they didnt like the idea of having a "Hefner Hall".',
+          'Hugh Hefner graduated UIUC in 49 with a Psych major and a double minor in creative writing and art. He chose the name "Playboy Bunny" based on his experiences at Bunnys Tavern.',
+          'The antagonist of “2001: A Space Odyssey,” HAL 9000 came online in Urbana.',
+          'The air conditioning to Krannert is actually located on the roof of ISR.',
+          'Panda is open again',
+          'The Krannert Center was, for a long time, the most perfect acoustic auditorium in the western hemisphere. The Chicago Symphony Orchestra used to record there because it sounded so great.',
+          'university housing spent $58,000 having a custom pasta machine made and imported from italy. it prints block I pasta. more than enough money for two students’ full tuition and fees. for the ISR dining hall.',
+          'The famous engineer Arya Haria found his wife Prisha at the PAR bus stop.'
+        ]
+        document.querySelector('#output_p').innerHTML =
+          facts[Math.floor(Math.random() * facts.length)]
+      }
+    </script>
+  </body>
+</html>
