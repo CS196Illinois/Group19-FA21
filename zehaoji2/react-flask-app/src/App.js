@@ -10,7 +10,7 @@ export default class Test extends React.Component {
   // keep the 'props' statements: they are parameters from react
   constructor(props) {
     super(props);
-    this.state = { val: -1 };
+    this.state = { val: 365 };
   }
   // this is a function that sets val in state
   fib = () => {
